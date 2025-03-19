@@ -1,4 +1,4 @@
-interface VenueItem {
+export interface VenueItem {
     _id: string,
     name: string,
     address: string,

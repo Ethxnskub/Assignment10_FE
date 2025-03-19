@@ -3,6 +3,7 @@ import { useEffect, useReducer, useState } from "react";
 import Card from "@/components/Card";
 import { Link } from "@mui/material";
 import getVenues from "@/libs/getVenues";
+import { VenueJson, VenueItem } from "../../interface";
 
 
 export default function CardPanel(){
