@@ -10,7 +10,12 @@ export default function BookingList(){
     return (
         <>
         {
-            venueItems.map((BookingItem) => (
+            venueItems.length === 0 ? (
+                <div className="text-center text-gray-500 text-xl py-5">
+                    No Venue Booking
+                </div>
+            ) 
+            :(venueItems.map((BookingItem) => (
                 <div className="bg-slate-200 rounded px-5 mx-5 py-2 my-2" key={BookingItem.venue}>
                    <div className="text-xl text-black">{BookingItem.venue}</div>
                     <div className="text-l text-black">{BookingItem.nameLastname}</div>
@@ -19,6 +24,7 @@ export default function BookingList(){
                     <button className="block rounded-md bg-sky-600 hover:bg-indigo-600 px-3 py-1 text-white shadow-sm" onClick={()=>dispatch(removeBooking(BookingItem))}>Remove from List</button>
                 </div>
             ))
+            )
         }
         </>
     )

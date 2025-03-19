@@ -22,11 +22,11 @@ export default function LocationDateBooking({onDateChange, onLocationChange, onN
             
             <TextField variant="standard" name="Name-Lastname" label="Name-Lastname" fullWidth onChange={(e)=>{setName(e.target.value); onNameChange(e.target.value);}}/>
             <TextField variant="standard" name="Contact-Number" label="Contact-Number" fullWidth onChange={(e)=>{setTelnum(e.target.value); onTelnumChange(e.target.value);}}/>
-            <Select variant='standard' name='venue' id='venue' value={location} onChange={(e)=>{setLocation(e.target.value); onLocationChange(e.target.value);}} className='h-[2em] w-[250px]'>
+            {/* <Select variant='standard' name='venue' id='venue' value={location} onChange={(e)=>{setLocation(e.target.value); onLocationChange(e.target.value);}} className='h-[2em] w-[250px]'>
                 <MenuItem value="Bloom">The Bloom Pavilion</MenuItem>
                 <MenuItem value="Spark">Spark Space</MenuItem>
                 <MenuItem value="GrandTable">The Grand Table</MenuItem>
-            </Select>
+            </Select> */}
             </div>  
         </div>
     )
