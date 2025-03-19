@@ -1,5 +1,6 @@
 import { Link } from "@mui/material";
 import Card from "./Card";
+import { VenueItem, VenueJson } from "../../interface";
 
 export default async function VenueCatalog({ venuesJson }: { venuesJson: Promise<VenueJson> }) {
     const venuesJsonReady = await venuesJson;
